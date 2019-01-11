@@ -1,0 +1,7 @@
+.ResourceContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80vh;
+  margin: 2rem auto;
+}

@@ -1,0 +1,39 @@
+h1 {
+  font-family: StarFont;
+  color: yellow;
+  margin: 2rem 5rem;
+  font-size: 4rem;
+  display: inline-block;
+}
+
+h1 > span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-size: 1.5rem;
+  display: block;
+  font-family: StarFont;
+}
+
+select,
+input {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.ResourceControls {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  box-shadow: inset 0px -5px 5px yellow;
+  overflow: hidden;
+  height: 10%;
+}
+
+@font-face {
+  font-family: StarFont;
+  src: url(./Starjedi.ttf);
+}

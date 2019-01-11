@@ -1,0 +1,39 @@
+.Resource {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  border: 1px solid yellow;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 5%;
+}
+
+caption {
+  font-family: StarFont;
+  color: yellow;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+tr {
+}
+
+td {
+  padding: 0.5rem 1rem;
+}
+
+tr td:first-of-type {
+  border-bottom: 1px dashed yellow;
+  font-family: StarFont;
+  margin-right: 1rem;
+  color: yellow;
+  border-right: 1px dashed yellow;
+}
+
+tr td:nth-child(2) {
+  border-bottom: 1px dashed yellow;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
