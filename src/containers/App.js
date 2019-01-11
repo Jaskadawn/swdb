@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ResourceSelector from '../components/ResourceSelector';
 import ResourceFilter from '../components/ResourceFilter';
 import ResourceSorter from '../components/ResourceSorter';
 import ResourceContainer from '../components/ResourceContainer';
+import CategoryButtons from '../components/CategoryButtons';
 import Scroll from '../components/Scroll';
 
 import './App.css';
@@ -16,7 +16,8 @@ class App extends Component {
     this.state = {
       resources: {},
       resourceName: '',
-      resourceData: []
+      resourceData: [],
+      isLoading: false
     };
   }
 
@@ -26,38 +27,47 @@ class App extends Component {
     this.fetchResource(resourceName);
   };
 
-  fetchResource = async resourceName => {
-    const resourceData = await fetch(baseUrl + resourceName)
-      .then(response => response.json())
-      .then(response => response.results);
-    this.setState({ resourceData });
+  fetchResource = resourceName => {
+    return async () => {
+      this.setState({ isLoading: true });
+      const resourceData = await fetch(baseUrl + resourceName)
+        .then(response => response.json())
+        .then(response => response.results);
+      this.setState({ resourceData, isLoading: false });
+    };
   };
 
-  componentDidMount() {
-    fetch(baseUrl)
+  async componentDidMount() {
+    this.setState({ isLoading: true });
+    await fetch(baseUrl)
       .then(response => response.json())
-      .then(data => this.setState({ resources: data }));
+      .then(data => this.setState({ resources: data, isLoading: false }));
   }
 
   render() {
-    const { resources, resourceName, resourceData } = this.state;
+    const { resources, resourceName, resourceData, isLoading } = this.state;
     const disabled = resourceData.length === 0 ? true : false;
 
     return (
       <div>
         <div className="ResourceControls">
           <h1>
-            @ <span>API</span>
+            @ <span>DB</span>
           </h1>
-          <ResourceFilter disabled={disabled} />2
-          <ResourceSelector
-            resources={resources}
-            onResourceSelected={this.onResourceSelected}
+          <CategoryButtons
+            categories={resources}
+            clickHandler={this.fetchResource}
           />
+          <ResourceFilter disabled={disabled} />
+
           <ResourceSorter disabled={disabled} />
         </div>
         <Scroll>
-          <ResourceContainer resourceName={resourceName} data={resourceData} />
+          <ResourceContainer
+            isLoading={isLoading}
+            resourceName={resourceName}
+            data={resourceData}
+          />
         </Scroll>
       </div>
     );

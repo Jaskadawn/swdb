@@ -1,13 +1,23 @@
 h1 {
   font-family: StarFont;
   color: yellow;
-  margin: 2rem 3rem;
-  font-size: 4rem;
+  padding: 1rem 0 1rem 2rem;
+  font-size: 3rem;
   display: inline-block;
+  white-space: nowrap;
+}
+
+h2 {
+  color: yellow;
 }
 
 h1 > span {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: yellow;
+  color: #000;
+  position: relative;
+  bottom: 0.4rem;
+  right: 1.3rem;
 }
 
 label {
@@ -24,13 +34,21 @@ input {
   padding: 0.3rem;
 }
 
+input:disabled,
+select:disabled {
+  background-color: red;
+}
+
 .ResourceControls {
   width: 100%;
   margin: 0 auto;
   background-color: black;
-  box-shadow: inset 0px -5px 5px yellow;
+  box-shadow: inset 0px -2px 1px yellow;
   overflow: hidden;
   height: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 @font-face {
