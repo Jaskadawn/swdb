@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/swdb-release/static/js/runtime~main.a6ffc4a4.js"
   },
   {
-    "revision": "f6a3f6821446b14e32ac",
-    "url": "/swdb-release/static/js/main.f6a3f682.chunk.js"
+    "revision": "320a77bc945e29c8284c",
+    "url": "/swdb-release/static/js/main.320a77bc.chunk.js"
   },
   {
-    "revision": "9a2ef70d5fe2065a775b",
-    "url": "/swdb-release/static/js/1.9a2ef70d.chunk.js"
+    "revision": "c47304c2dffff7882e15",
+    "url": "/swdb-release/static/js/1.c47304c2.chunk.js"
   },
   {
-    "revision": "f6a3f6821446b14e32ac",
-    "url": "/swdb-release/static/css/main.246c8e1f.chunk.css"
+    "revision": "320a77bc945e29c8284c",
+    "url": "/swdb-release/static/css/main.95e26662.chunk.css"
   },
   {
-    "revision": "699fae1b318dbb02c827e52fe431e41e",
+    "revision": "80d92680a3d4efa6afbab5a176c1d409",
     "url": "/swdb-release/index.html"
   }
 ];
