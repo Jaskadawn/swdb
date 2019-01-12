@@ -13,7 +13,7 @@ h2 {
 
 h1 > span {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: yellow;
+  background-color: #e8d819;
   color: #000;
   position: relative;
   bottom: 0.4rem;
@@ -39,11 +39,20 @@ select:disabled {
   background-color: red;
 }
 
+footer {
+  background-color: #e8d819;
+  width: 100%;
+  display: block;
+  height: 7.5vh;
+  text-align: center;
+  padding: 2rem;
+}
+
 .ResourceControls {
   width: 100%;
   margin: 0 auto;
   background-color: black;
-  box-shadow: inset 0px -2px 1px yellow;
+  box-shadow: inset 0px -2px 1px #e8d819;
   overflow: hidden;
   height: 10%;
   display: flex;

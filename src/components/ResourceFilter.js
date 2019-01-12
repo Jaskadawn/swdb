@@ -2,11 +2,11 @@ import React from 'react';
 
 import './ResourceFilter.css';
 
-const ResourceFilter = ({ disabled }) => {
+const ResourceFilter = ({ disabled, inputHandler }) => {
   return (
     <div className="ResourceFilter">
       <label>Search:</label>
-      <input type="text" disabled={disabled} />
+      <input onInput={inputHandler} type="text" disabled={disabled} />
     </div>
   );
 };

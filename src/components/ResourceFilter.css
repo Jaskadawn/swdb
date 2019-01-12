@@ -1,7 +1,6 @@
 .ResourceFilter {
-  margin: 0 1rem;
-  color: yellow;
+  margin: 0rem 0.5rem 2rem 0.5rem;
+  color: #e8d819;
   display: inline-block;
-  padding: 0.5rem;
   width: 300px;
 }

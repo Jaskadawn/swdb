@@ -1,0 +1,41 @@
+.CategoryItemList {
+  background-color: black;
+  list-style: none;
+  display: inline-block;
+  height: 81.5vh;
+  overflow-y: scroll;
+  min-width: 300px;
+  max-width: 300px;
+  scrollbar-color: #000000 #ffff00;
+  scrollbar-width: thin;
+}
+
+li {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem;
+  box-shadow: 3px 2px yellow;
+}
+
+.CategoryItemList button {
+  padding: 0.5rem;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border: 1px solid yellow;
+  color: yellow;
+  text-align: left;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  transition: 1s transform;
+}
+
+.CategoryItemList button:hover {
+  background-color: yellow;
+  color: black;
+  transform: translate(3px, 2px);
+  box-shadow: none;
+}

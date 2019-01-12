@@ -4,15 +4,14 @@
   background-color: #000;
   color: #fff;
   text-align: left;
-  border: 1px solid yellow;
+  border: 1px solid #e8d819;
   min-width: 300px;
-  max-width: 500px;
-  border-radius: 5%;
+  max-width: 700px;
 }
 
 caption {
   font-family: StarFont;
-  color: yellow;
+  color: #e8d819;
   text-decoration: underline;
   font-size: 1.5rem;
 }
@@ -25,15 +24,15 @@ td {
 }
 
 tr td:first-of-type {
-  border-bottom: 1px dashed yellow;
+  border-bottom: 1px dashed #e8d819;
   font-family: StarFont;
   margin-right: 1rem;
-  color: yellow;
-  border-right: 1px dashed yellow;
+  color: #e8d819;
+  border-right: 1px dashed #e8d819;
 }
 
 tr td:nth-child(2) {
-  border-bottom: 1px dashed yellow;
+  border-bottom: 1px dashed #e8d819;
   text-align: right;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

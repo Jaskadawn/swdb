@@ -1,0 +1,14 @@
+.ItemDisplay {
+  display: inline-block;
+  background-color: black;
+  max-width: 90vw;
+  overflow-y: scroll;
+  max-height: 81.5vh;
+  scrollbar-color: #000000 #ffff00;
+  scrollbar-width: thin;
+}
+
+.ItemDisplay td:nth-child(2) {
+  color: white;
+  font-family: Verdana, sans-serif;
+}

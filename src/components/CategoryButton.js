@@ -1,9 +1,19 @@
 import React from 'react';
 import './CategoryButton.css';
 
-const CategoryButton = ({ category, clickHandler }) => {
+const CategoryButton = ({
+  category,
+  clickHandler,
+  mouseUpHandler,
+  selected
+}) => {
+  const classes = selected ? 'CategoryButton selected' : 'CategoryButton';
   return (
-    <button className="CategoryButton" onClick={clickHandler}>
+    <button
+      className={classes}
+      onMouseUp={mouseUpHandler}
+      onClick={clickHandler}
+    >
       {category}
     </button>
   );

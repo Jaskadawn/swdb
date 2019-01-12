@@ -9,7 +9,14 @@
   text-transform: uppercase;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
-  transition: 0.5s all;
+  transition: 1s transform;
+}
+
+.CategoryButton.selected {
+  background-color: yellow;
+  color: black;
+  transform: translate(3px, 2px);
+  box-shadow: none;
 }
 
 .CategoryButton:hover {
